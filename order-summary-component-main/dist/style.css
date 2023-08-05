@@ -1,0 +1,171 @@
+html {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.bg {
+  position: fixed;
+  z-index: -10;
+}
+.bg .mobile-bg {
+  width: 100%;
+}
+.bg .desktop-bg {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.wrapper .container {
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 2rem;
+  height: 100%;
+  margin-inline: auto;
+  padding-bottom: 1.5rem;
+  width: clamp(300px, 88.5%, 26.125rem);
+  box-shadow: 0 1rem 0rem hsl(225, 100%, 94%);
+}
+.wrapper .container .hero-section {
+  margin-bottom: 2.375rem;
+}
+.wrapper .container .hero-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem 2rem 0 0;
+}
+.wrapper .container .content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper .container .content .title {
+  font-weight: 900;
+  font-size: 1.313rem;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+.wrapper .container .content .text {
+  word-wrap: break-word;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 1.5rem;
+}
+.wrapper .container .pricing-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+  height: 5rem;
+  width: 87%;
+  margin: auto;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+}
+.wrapper .container .pricing-container img {
+  border: none;
+  background-color: hsl(225, 100%, 94%);
+  border-radius: 50%;
+  margin-left: 1.5rem;
+}
+.wrapper .container .pricing-container .plan-details {
+  margin-left: 0.5rem;
+}
+.wrapper .container .pricing-container .plan-details .plan-type-text {
+  text-transform: capitalize;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.wrapper .container .pricing-container .plan-details .plan-price-text {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.wrapper .container .pricing-container .change-btn {
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-right: 1.5rem;
+  margin-left: auto;
+}
+.wrapper .container .pricing-container .change-btn:hover {
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+.wrapper .container .payment-btns .proceed-btn {
+  margin-top: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.8rem;
+  height: 3.125rem;
+  width: 87%;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 900;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 1.7rem hsl(225, 100%, 94%);
+  transition: 0.5s ease;
+}
+.wrapper .container .payment-btns .proceed-btn:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+.wrapper .container .payment-btns .cancel-btn {
+  margin-top: 1.813rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 35%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wrapper .container .payment-btns .cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  margin-top: 1rem;
+  margin-bottom: auto;
+  z-index: 50;
+}
+
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+  .bg {
+    top: -6.5rem;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+  }
+  .bg .desktop-bg {
+    display: block;
+    height: auto;
+    margin-top: auto;
+    margin-right: auto;
+  }
+  .bg .mobile-bg {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
